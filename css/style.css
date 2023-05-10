@@ -1,0 +1,62 @@
+#gameboard{
+    border: 1px solid;
+    width:500px;
+    height:300px;
+    margin: auto;
+}
+
+#points{
+    text-align: center;
+}
+
+#dyno{
+    width:70px;
+    height:70px;
+    background-image: url(../images/dyno.jpg);
+    background-size: cover;
+    position: relative;
+    top: 230px;
+}
+
+#stone{
+    width:45px;
+    height:45px;
+    background-image: url(../images/stone.jpg);
+    background-size: cover;
+    position: relative;
+    top: 180px;
+    left: 450px;
+
+    animation: stone 1.5s infinite;
+
+}
+
+@keyframes stone {
+    0%{
+        left:450px;
+    }
+    100%{
+        left:-45px;
+    }
+    
+}
+
+
+.jump_animation{
+    animation:jump 0.5s;
+}
+
+@keyframes jump {
+    0%{
+        top:230px;
+    }
+    25%{
+        top:70px;
+    }
+    50%{
+        top:70px;
+    }
+    100%{
+        top:230px;
+    }
+}
